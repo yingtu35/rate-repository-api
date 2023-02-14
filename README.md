@@ -22,6 +22,22 @@ Tested with Node version 16, but later versions _might_ work as well) and npm. I
 
 6. All done! Just run `npm start` to start the server. After the server has started you should be able to access the Apollo Sandbox at http://localhost:4000.
 
+**NOTE** The port 5000 might be reserved in new macOS versions. If you see this error
+
+``` 
+Error: listen EADDRINUSE: address already in use :::5000
+```
+
+define an alternative port in file .env. You may eg. pick 5001:
+
+``` 
+PORT=5001
+```
+
+Change also the Authorization callback URL [here](https://github.com/settings/developers) to have the new port value.
+
+. See [this](https://github.com/fullstack-hy2020/rate-repository-api/issues/6) how to change the default port if run into a problem.
+
 ## 🔑 Authentication
 
 To list all the registered users, you can run this query in the Apollo Sandbox:
