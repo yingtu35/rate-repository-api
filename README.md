@@ -36,7 +36,6 @@ PORT=5001
 
 Change also the Authorization callback URL [here](https://github.com/settings/developers) to have the new port value.
 
-. See [this](https://github.com/fullstack-hy2020/rate-repository-api/issues/6) how to change the default port if run into a problem.
 
 ## 🔑 Authentication
 
